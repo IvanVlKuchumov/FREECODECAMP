@@ -9,7 +9,7 @@ function testSize(num) {
   } else if (num < 20) {
     return 'Large';
   } else {
-    return 'Huge'
+    return 'Huge';
   }
   // Only change code above this line
 }
