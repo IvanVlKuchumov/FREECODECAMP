@@ -30,16 +30,13 @@ function lookUpProfile(name, prop) {
   // Only change code below this line
   for (let i = 0; i < contacts.length; i++) {
     if (name == contacts[i]["firstName"]) {
-      for (let j = 0; j < contacts[i].length; j++){
-        if (prop === contacts[i][j]) {
+      if ((prop in contacts[i]) !== undefined) {
         return contacts[i][prop];
         }
-      }
     return "No such property"  
-    }
-        return "No such contact"
-      
-
+    }   
+  }
+    return "No such contact"
   // Only change code above this line
 }
 
